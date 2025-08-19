@@ -17,6 +17,7 @@ body {
 .mainContainer {
   margin: 0 6.25rem;
   padding: 0 0.75rem;
+  width: 100vw;
 }
 header {
   display: flex;
@@ -133,7 +134,14 @@ header {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     width: 25rem;
     margin: 0 1.5rem;
-    position: ;
+    float: none;
+    position: unset;
+  }
+  .container {
+    display: flex;
+    margin-left: 1.5rem;
+    overflow-y: auto;
+    padding: 0 1.5rem;
   }
 }
 
@@ -148,7 +156,14 @@ header {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     width: 25rem;
     margin: 0 1.5rem;
-    position: ;
+    float: none;
+    position: unset;
+  }
+  .container {
+    display: flex;
+    margin-left: 0;
+    overflow-y: auto;
+    padding: 0 1.5rem;
   }
 }
 
