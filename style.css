@@ -121,3 +121,45 @@ header {
   font-weight: 700;
   border-bottom: 1px solid #eeeeee;
 }
+
+@media (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: 25rem;
+    margin: 0 1.5rem;
+    position: ;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: 25rem;
+    margin: 0 1.5rem;
+    position: ;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
