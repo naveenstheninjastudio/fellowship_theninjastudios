@@ -122,6 +122,33 @@ header {
   border-bottom: 1px solid #eeeeee;
 }
 
+.address {
+  display: flex;
+  flex-direction: row;
+}
+
+.addressRow {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.addressRow div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 00250.75rem;
+}
+
+#email {
+  text-transform: lowercase;
+}
+
+h4 {
+  color: #00b87b;
+  font-weight: 500;
+}
+
 @media (max-width: 1280px) {
   html {
     font-size: 16px;
