@@ -126,19 +126,19 @@ header {
   margin-bottom: 1rem;
 }
 
-.address {
+.subSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.addressRow {
+.subRow {
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
 }
 
-.addressRow div {
+.subRow div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -288,7 +288,7 @@ h4 {
     overflow-y: auto;
     padding: 0 1.5rem;
   }
-  .address {
+  .subSection {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
