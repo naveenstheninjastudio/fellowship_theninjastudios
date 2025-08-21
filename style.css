@@ -169,6 +169,7 @@ h5 {
 
 p {
   text-align: justify;
+  line-height: 1.5rem;
 }
 
 .progress {
@@ -215,9 +216,77 @@ p {
   gap: 1rem;
   padding: 0.25rem 0.75rem;
 }
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+.contactRow {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.75rem;
+}
 
-.project {
-  line-height: 1.5rem;
+.contactRow1 {
+  display: flex;
+  flex-direction: row;
+}
+.contactName {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 1rem 0 0;
+}
+
+.contactEmail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 0 0 1rem;
+}
+
+.inputBox:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 184, 123, 0.25);
+}
+
+textarea {
+  height: 12.5rem;
+  background-color: #314355;
+  color: #eeeeee;
+  border: 0;
+  padding: 0.75rem;
+  font-family: inherit;
+}
+
+textarea::placeholder {
+  color: #eeeeee;
+  text-transform: capitalize;
+  font-weight: 500;
+  border: 0;
+}
+
+input {
+  background-color: #314355;
+  color: #eeeeee;
+  border: 0;
+  padding: 0.75rem;
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #eeeeee;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.submitButton {
+  background-color: #26c38f;
+  color: #eeeeee;
+  padding: 0.75rem;
+  border: 0;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1rem;
 }
 
 @media (max-width: 1280px) {
@@ -449,5 +518,23 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .contactRow1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactName {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 0 1rem 0;
+  }
+
+  .contactEmail {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem 0 0 0;
   }
 }
