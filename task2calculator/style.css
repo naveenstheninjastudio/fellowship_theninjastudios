@@ -29,11 +29,15 @@ html {
 
 .display {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   height: 150px;
   width: 25rem;
+  font-size: 2rem;
   background-color: #000000;
-  padding: 0.25rem;
+  padding: 0.5rem;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .keypad {
@@ -63,7 +67,9 @@ html {
   margin: 0.5rem;
   border-radius: 1.5rem;
 }
-
+.btnClr {
+  flex: 2;
+}
 .btnac,
 .btnPercent,
 .btnClr,
@@ -76,4 +82,13 @@ html {
 
 .btnEqual {
   background-color: #8b919f;
+}
+
+
+
+
+@media (max-width:480px) {
+  .mainContainer {
+  background-color: #000000;
+  
 }
