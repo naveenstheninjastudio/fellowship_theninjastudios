@@ -1,0 +1,537 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #2c3e50;
+  color: #eeeeee;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.mainContainer {
+  margin: 0 6.25rem;
+  padding: 0 0.75rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 25rem;
+  margin: 0 1.5rem;
+  position: fixed;
+}
+
+.imagePlaceholder {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.imagePlaceholder img {
+  width: 25rem;
+}
+
+.namePlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+}
+
+.name {
+  display: flex;
+  color: #00b87b;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.role {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0.5rem;
+}
+
+.socialHandle {
+  display: flex;
+  width: 25rem;
+  justify-content: center;
+  margin: 6.3rem 1rem 1rem 1rem;
+}
+
+.socialHandle img {
+  width: 2.5rem;
+  filter: invert();
+}
+.cv_links {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 25rem;
+  font-weight: 300;
+}
+
+.cv_links a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.download_cv {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #6c757d;
+}
+
+.contact {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #6c757d;
+}
+
+.container {
+  margin-left: 26.5rem;
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 1.5rem 0 3rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  border-bottom: 1px solid #6c757d;
+}
+
+.sectionHeading {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.sectionContent {
+  margin-bottom: 1rem;
+}
+
+.subSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subRow {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.subRow div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.subRow div div {
+  gap: 0;
+  padding: 0;
+}
+
+#email {
+  text-transform: lowercase;
+}
+
+h4 {
+  color: #00b87b;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+h5 {
+  font-style: italic;
+  font-weight: 300;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.progress {
+  width: 100%;
+}
+
+.progressFull {
+  display: flex;
+  flex: 1;
+  height: 3px;
+  background-color: #eeeeee;
+}
+.progressBar1 {
+  display: flex;
+  flex: 2;
+  height: 3px;
+  background-color: #dc3545;
+}
+
+.progressBar2 {
+  display: flex;
+  flex: 3;
+  height: 3px;
+  background-color: #ffc107;
+}
+
+.progressBar3 {
+  display: flex;
+  flex: 0.6;
+  height: 3px;
+  background-color: #6f42c1;
+}
+
+.progressBar4 {
+  display: flex;
+  flex: 0.2;
+  height: 3px;
+  background-color: #0dcaf0;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.25rem 0.75rem;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+.contactRow {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.75rem;
+}
+
+.contactRow1 {
+  display: flex;
+  flex-direction: row;
+}
+.contactName {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 1rem 0 0;
+}
+
+.contactEmail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 0 0 1rem;
+}
+
+.inputBox:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 184, 123, 0.25);
+}
+
+textarea {
+  height: 12.5rem;
+  background-color: #314355;
+  color: #eeeeee;
+  border: 0;
+  padding: 0.75rem;
+  font-family: inherit;
+}
+
+textarea::placeholder {
+  color: #eeeeee;
+  text-transform: capitalize;
+  font-weight: 500;
+  border: 0;
+}
+
+input {
+  background-color: #314355;
+  color: #eeeeee;
+  border: 0;
+  padding: 0.75rem;
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #eeeeee;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.submitButton {
+  background-color: #26c38f;
+  color: #eeeeee;
+  padding: 0.75rem;
+  border: 0;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0.75rem;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    width: 40rem;
+    margin: 0 1.5rem;
+    float: none;
+    position: unset;
+  }
+
+  .imagePlaceholder {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .imagePlaceholder img {
+    width: 40.25rem;
+  }
+
+  .namePlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+  }
+
+  .name {
+    display: flex;
+    color: #00b87b;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  .role {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0.5rem 0.5rem;
+  }
+
+  .socialHandle {
+    display: flex;
+    width: 20rem;
+    justify-content: center;
+    margin: 6.3rem 1rem 1rem 1rem;
+  }
+
+  .socialHandle img {
+    width: 2.5rem;
+    filter: invert();
+  }
+  .cv_links {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    width: 40.25rem;
+  }
+
+  .cv_links a {
+    color: #eeeeee;
+    text-decoration: none;
+  }
+
+  .download_cv {
+    display: flex;
+    justify-content: center;
+    padding: 0.375rem 0.75rem;
+    flex: 1;
+    border: 1px solid #6c757d;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 0.375rem 0.75rem;
+    flex: 1;
+    border: 1px solid #6c757d;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    overflow-y: auto;
+    padding: 0 1.5rem;
+  }
+  .section {
+    margin: 0 1.5rem;
+  }
+
+  .subSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    width: 23.563rem;
+    margin: 0 1.5rem;
+    float: none;
+    position: unset;
+  }
+
+  .imagePlaceholder {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+  .imagePlaceholder img {
+    width: 23.563rem;
+  }
+
+  .namePlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+  }
+
+  .name {
+    display: flex;
+    color: #00b87b;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  .role {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0.5rem 0.5rem;
+  }
+
+  .socialHandle {
+    display: flex;
+    width: 20rem;
+    justify-content: center;
+    margin: 6.3rem 1rem 1rem 1rem;
+  }
+
+  .socialHandle img {
+    width: 2.5rem;
+    filter: invert();
+  }
+  .cv_links {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    width: 23.563rem;
+  }
+
+  .cv_links a {
+    color: #eeeeee;
+    text-decoration: none;
+  }
+
+  .download_cv {
+    display: flex;
+    justify-content: center;
+    padding: 0.375rem 0.75rem;
+    flex: 1;
+    border: 1px solid #6c757d;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 0.375rem 0.75rem;
+    flex: 1;
+    border: 1px solid #6c757d;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    overflow-y: auto;
+    padding: 0;
+  }
+  .subSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contactRow1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactName {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 0 1rem 0;
+  }
+
+  .contactEmail {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem 0 0 0;
+  }
+}
