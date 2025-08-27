@@ -9,6 +9,7 @@ html {
 
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -47,4 +48,15 @@ html {
 .task a {
   color: #1e1e1e;
   text-decoration: none;
+}
+
+
+
+@media (max-width:480px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
