@@ -2,15 +2,14 @@ export function ProfileCard(props) {
   return (
     <div className="card">
       <div className="cardImg">
-        <img src="" alt="" srcset="" />
+        <img src={props.image} alt="" />
       </div>
       <div className="cardContent">
-        <div className="cardName">lisa</div>
-        <div className="cardRole">dance/singer</div>
-        <div className="cardBio">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-          explicabo consectetur repellendus necessitatibus pariatur
+        <div className="cardName">
+          {props.firstName} {props.lastName}
         </div>
+        <div className="cardRole">{props.role}</div>
+        <div className="cardBio">{props.bio}</div>
       </div>
     </div>
   );
