@@ -87,5 +87,7 @@ html {
   }
   .task {
     font-size: 1rem;
+    width: 60vw;
+    height: 10vh;
   }
 }
